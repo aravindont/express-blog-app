@@ -1,0 +1,103 @@
+{
+  "info": {
+    "_postman_id": "cd590721-2eee-4a3e-97ab-b8a9cfc95d11",
+    "name": "express-blog",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19367894"
+  },
+  "item": [
+    {
+      "name": "create a blog",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"blog-10\",\r\n    \"content\":\"content of blog-10\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/blogs/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["blogs", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get all blogs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/blogs/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["blogs", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "read specific blog",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/blogs/64799c5c4a5ee14664bc8e95",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["blogs", "64799c5c4a5ee14664bc8e95"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete a blog",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/blogs/64799c5c4a5ee14664bc8e95",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["blogs", "64799c5c4a5ee14664bc8e95"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update a blog",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"blog-1\",\r\n    \"content\":\"contents of blog-1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/blogs/6479957e4a5ee14664bc8e8d",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["blogs", "6479957e4a5ee14664bc8e8d"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
